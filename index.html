@@ -5,18 +5,18 @@
   <title>Redireccionando…</title>
 
   <script>
-    // DESTINO: tu página personal (project page)
-    const target = "https://estudiomoreno.github.io/germanmoreno.github.io/";
+    // DESTINO: tu web REAL (la del QR)
+    const target = "https://estudiomoreno.github.io/-Estudio-Juridico-Moreno-/";
 
-    // Conserva query (?fbclid=...) y hash (#contacto) por si vienen en el QR
+    // conserva ?fbclid=... y #contacto si vienen en el link/QR
     const url = target + window.location.search + window.location.hash;
 
-    // replace() evita “volver” al redirect en el historial
+    // replace evita que quede “atrás” en el historial
     window.location.replace(url);
   </script>
 
   <noscript>
-    <meta http-equiv="refresh" content="0; url=https://estudiomoreno.github.io/germanmoreno.github.io/">
+    <meta http-equiv="refresh" content="0; url=https://estudiomoreno.github.io/-Estudio-Juridico-Moreno-/">
   </noscript>
 </head>
 <body>
