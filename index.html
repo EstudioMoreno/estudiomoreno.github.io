@@ -1,14 +1,23 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Redireccionando…</title>
 
-  <meta http-equiv="refresh" content="0; url=https://estudiomoreno.github.io/germanmoreno.github.io/">
-
   <script>
-    window.location.href = "https://estudiomoreno.github.io/germanmoreno.github.io/";
+    // DESTINO: tu página personal (project page)
+    const target = "https://estudiomoreno.github.io/germanmoreno.github.io/";
+
+    // Conserva query (?fbclid=...) y hash (#contacto) por si vienen en el QR
+    const url = target + window.location.search + window.location.hash;
+
+    // replace() evita “volver” al redirect en el historial
+    window.location.replace(url);
   </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://estudiomoreno.github.io/germanmoreno.github.io/">
+  </noscript>
 </head>
 <body>
   Redireccionando…
